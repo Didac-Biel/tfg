@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.loginshaggin">
+
+    <!-- Permís per accés a Internet (Firebase i futur Google Maps) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LogInShaggin"
+        tools:targetApi="31">
+
+        <!-- Activitat inicial: pantalla d'autenticació -->
+        <activity
+            android:name=".AuthActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Pantalla de selecció de llicència i rutes -->
+        <activity
+            android:name=".PantallaRegistreAvio"
+            android:exported="false" />
+
+        <!-- (Opcional) Pantalla de mapa per més endavant -->
+        <activity
+            android:name=".MapaActivity"
+            android:exported="false" />
+
+        <!-- (Opcional) Clau per Google Maps, només si vols provar-ho més endavant -->
+        <!--
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        -->
+
+    </application>
+</manifest>

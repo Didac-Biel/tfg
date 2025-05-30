@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LogInShaggin</string>
+    <string-array name="Llicencies_array">
+        <item>cqc</item>
+        <item>PPL</item>
+        <item>CPL</item>
+        <item>ATPL</item>
+    </string-array>
+
+    <string-array name="Avions_array">
+        <item>Boeing 747</item>
+        <item>Airbus 380</item>
+    </string-array>
+
+    <string-array name="Sortides_array">
+        <item>Aeroport de Sabadell</item>
+    </string-array>
+
+    <string-array name="Arribades_array">
+        <item>Aeroport de Palma</item>
+        <item>Aeroport de Maó</item>
+    </string-array>
+
+</resources>

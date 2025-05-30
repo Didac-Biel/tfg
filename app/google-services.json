@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628488451551",
+    "project_id": "loginshagin",
+    "storage_bucket": "loginshagin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628488451551:android:d0524e8d50325d805b006a",
+        "android_client_info": {
+          "package_name": "com.example.loginshaggin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjrBipsZCQJUYpCQSEuF63ds0kVfoJwn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
