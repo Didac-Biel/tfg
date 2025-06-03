@@ -1,7 +1,7 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    id("com.google.gms.google-services")
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services") // Per Firebase
 }
 
 android {
@@ -17,9 +17,8 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        val MAPS_API_KEY = "IzaSyAVme976mRfnuPNxw5DtN3VdrNL1R7IVXE"
-        resValue("string", "google_maps_key", MAPS_API_KEY)
-
+        // Aquí afegim la clau directament per Google Maps
+        resValue("string", "google_maps_key", "AIzaSyAVme976mRfnuPNxw5DtN3VdrNL1R7IVXE")
     }
 
     buildTypes {
@@ -31,6 +30,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -38,25 +38,28 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
+    // Core Android
+    implementation(libs.androidx.core.ktx.v1120)
+    implementation(libs.androidx.appcompat.v161)
+    implementation(libs.material.v1110)
+    implementation(libs.androidx.constraintlayout.v214)
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
-    implementation(libs.firebase.auth)
-    implementation(libs.play.services.maps)
+    // Firebase Auth
+    implementation(libs.firebase.auth.ktx)
+
+    // Google Maps
+    implementation(libs.play.services.maps.v1820)
+  //  implementation 'com.google.android.gms:play-services-location:21.3.0'
+
+    // Tests
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    //implementation("com.google.firebase:firebase-bom:33.13.0")
-    //implementation("com.google.firebase:firebase-analytics")
-    //implementation("com.google.firebase:firebase-auth:23.2.0")
-    //implementation ("com.google.android.gms:play-services-maps:18.2.0")
-
-
-
+    androidTestImplementation(libs.androidx.junit.v115)
+    androidTestImplementation(libs.androidx.espresso.core.v351)
 }

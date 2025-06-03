@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LogInShaggin</string>
+    <string name="app_name" translatable="false">LogInShaggin</string>
     <string-array name="Llicencies_array">
         <item>cqc</item>
         <item>PPL</item>
@@ -20,5 +20,6 @@
         <item>Aeroport de Palma</item>
         <item>Aeroport de Maó</item>
     </string-array>
+    <string name="D09012002dbdc">D09012002dbdc</string>
 
 </resources>

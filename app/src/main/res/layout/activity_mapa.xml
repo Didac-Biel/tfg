@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_mapa"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="24dp">
+    tools:context=".MapaActivity"/>
 
-    <TextView
-        android:id="@+id/txtRuta"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aquí es mostrarà la ruta"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-</LinearLayout>
+    <!--
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment_mapa"
+        android:name="com.example.loginshaggin.SupportMapaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapaActivity"
+        tools:ignore="MissingClass" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aquí es mostrarà la ruta"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>-->
