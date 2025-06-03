@@ -54,7 +54,7 @@ class PantallaRegistreAvio : AppCompatActivity() {
 
         // Quan cliquis el botó...
         btnCercarRuta.setOnClickListener {
-/*
+
             val llicenciaSeleccionada = spinnerLlistaLlicencies.selectedItem.toString()
             val origen = spinnerLlistaSortides.selectedItem.toString()
             val desti = spinnerLlistaArribades.selectedItem.toString()
@@ -100,10 +100,10 @@ class PantallaRegistreAvio : AppCompatActivity() {
                 startActivity(intent)
             } else {
                 Toast.makeText(this, "Cap ruta vàlida amb la llicència $llicenciaSeleccionada", Toast.LENGTH_LONG).show()
-            }*/
+            }
 
-            val intent = Intent(this, MapaActivity::class.java)
-            startActivity(intent)
+            //val intent = Intent(this, MapaActivity::class.java)
+            //startActivity(intent)
 
         }
     }

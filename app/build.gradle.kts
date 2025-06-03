@@ -56,8 +56,7 @@ dependencies {
 
     // Google Maps
     implementation(libs.play.services.maps.v1820)
-  //  implementation 'com.google.android.gms:play-services-location:21.3.0'
-
+    //implementation 'com.google.android.gms:play-services-location:21.3.0'
     // Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit.v115)
